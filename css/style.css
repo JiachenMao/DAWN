@@ -204,8 +204,13 @@ SECTION WRAPS
   color: white;
 }
 
-#skillswrap h5, p {
+#skillswrap h5 {
   color: white;
+}
+
+#skillswrap p{
+  color: white;
+  font-weight: 900;
 }
 
 #footwrap {
