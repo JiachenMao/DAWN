@@ -1,567 +1,418 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta name="google-site-verification" 
-		  content="fD5gahNF0zLrE5sWK_ui7tJnNCARuboEw5YFHans1PE" />
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>ICCAD HALO Workshop 2019</title>
-	<style type="text/css"> 
-		body {
-			margin: 2px;
-			padding: 0;
-			background-color: white;
-			font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
-		}
-		span.hl1 {
-		color:#ae00ff;
-		}
-		td.frameborder {
-			border-bottom: 1px solid #ae00ff;
-			
-		}
-		h1, h2 {
-			text-align: center;
-			margin: 5px;
-			padding: 5px;
-			background-color: white;
-			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
-		}
-		h3, h4 {
-			text-align: left;
-			margin: 2px;
-			padding: 5px;
-			background-color: white;
-		}
-		a {
-			text-decoration: none;
-		}
-		p.copyright1 {
-			text-align: center;
-			font-size: small;
-		}
-		p.secondaryTitle {
-			text-align: center;
-			margin: 1px;
-			padding: 2px;
-			background-color: white;
-		}
-		p.content1 {
-			text-align: left;
-			margin: 0px;
-			padding-top: 5px;
-			background-color: white;
-		}
-		p.content2 {
-			text-align: left;
-			margin: 0px;
-			padding-top: 5px;
-			background-color: white;
-			font-weight: bold;
-		}
-		p.content3 {
-			text-align: left;
-			margin-left: 5ex;
-			margin-right: 0em;
-			margin-top: 0em;
-			margin-bottom: 0em;
-			padding-top: 2px;
-			background-color: white;
-		}
-		p.content4 {
-			text-align: left;
-			margin-left: 4em;
-			margin-right: 0em;
-			margin-top: 0em;
-			margin-bottom: 0em;
-			padding-top: 2px;
-			background-color: white;
-		}
-		
-		
-		/*model*/
-		.btn_bn {
-			border: none;
-			text-align: left;
-			margin-left: 2em;
-			margin-right: 0em;
-			margin-top: 0em;
-			margin-bottom: 0em;
-			padding-top: 2px;
-			font-size: 14px;
-			cursor: pointer;
-			display: inline-block;
-			color: dodgerblue;
-		}
-	</style>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	
-</head> 
-<body> 
-	<table>
-		<!-- title -->
-		<tr class="frameborder">
-			<td class="frameborder">
-				<h2>Workshop on <span class="hl1">H</span>ardware and <span class="hl1">A</span>lgorithms for <span class="hl1">L</span>earning <span class="hl1">O</span>n-a-chip<br> (<span class="hl1">HALO</span>) 2019</h2>
-				<p class="secondaryTitle">Thursday, November 7, 2019</p>
-				<p class="secondaryTitle">The Westin Westminster, Westminster, CO</h4>
-				<p class="secondaryTitle">Past HALO workshops : <a href="http://nimo.asu.edu/halo/2015/">2015</a>/<a href="http://nimo.asu.edu/halo/2016/">2016</a>/<a href="http://nimo.asu.edu/halo/2017/">2017</a>/<a href="http://nimo.asu.edu/halo/">2018</a></p>
-<!--				<p class="secondaryTitle"><a href="assets/CFP_HALO_2019.pdf">Call for Posters</a>, submission deadline: October 25, 2019 EDT. Student travel support available.-->
-				<p class="secondaryTitle">Poster Submission is closed. Student travel grant available. Welcome your participation!
-			</td>
-		</tr>
-		<!-- General Information and key topics -->
-		<tr>
-			<td class="frameborder">
-				<h3>General Information</h3>
-				<p>Machine learning algorithms, such as those for image based search, face recognition, multi-category classification, and scene analysis, are being developed that will fundamentally alter the way individuals and organizations live, work, and interact with each other. However their computational complexity still challenges the state-of-the-art computing platforms, especially when the application of interest is tightly constrained by the requirements of low power, high throughput, small latency, etc.
-				</p>
-				<p>In recent years, there have been enormous advances in implementing machine learning algorithms with application-specific hardware (e.g., FPGA, ASIC, etc.). There is a timely need to map the latest learning algorithms to physical hardware, in order to achieve orders of magnitude improvement in performance, energy efficiency and compactness. Recent progress in computational neurosciences and nanoelectronic technology, such as resistive memory devices, will further help shed light on future hardware-software platforms for learning on-a-chip. 
-				</p>
-				<p>The overarching goal of this workshop is to explore the potential of on-chip machine learning, to reveal emerging algorithms and design needs, and to promote novel applications for learning. It aims to establish a forum to discuss the current practices, as well as future research needs in the fields below.  
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td class="frameborder">
-				<h3>Key Topics</h3>
-					<ul style="list-style-type:disc;">
-						<li>Synaptic plasticity and neuron motifs of learning dynamics</li>
-						<li>Computation models of cortical activities</li>
-						<li>Sparse learning, feature extraction and personalization</li>
-						<li>Deep learning with high speed and high power efficiency</li>
-						<li>Hardware acceleration for machine learning</li>
-						<li>Hardware emulation of brain</li>
-						<li>Nanoelectronic devices and architectures for neuro-computing</li>
-						<li>Applications of learning on a smart mobile platform</li>
-					</ul> 
-			</td>
-		</tr>
-		<!-- Speakers -->
-		<tr>
-			<td class="frameborder">
-				<h3>Speakers</h3>
-				<h4>Keynote</h4>
-				<ul style="list-style-type:none;">
-					<li>Allen Rush, AMD</li>
-				 	<li>Hsien-Hsin Lee, Facebook</li>
-				 	<li>Vikas Chandra, Facebook</li>
-				</ul>
-				<h4>Invited Speakers</h4>
-				<ul style="list-style-type:none;">
-				 	<li>Yu Wang, Tsinghua University</li>
-					<li>Jae-Joon Kim, Pohang University of Science and Technology (POSTECH)</li>
-					<li>Yingyan Lin, Rice University</li>
-					<li>Tinoosh Mohsenin, University of Maryland, Baltimore County</li>
-					<li>Jaewoong Sim, Intel</li>
-					<li>Siddharth Garg, New York University</li>
-					<li>Zheng Zhang, University of California, Santa Barbara</li>
-					<li>Pierre-Emmanuel Gaillardon, University of Utah</li>
-					<li>Catherine Schuman, Oak Ridge National Laboratory</li>
-				</ul>
-			</td>
-		</tr>
-	
-		<!-- Final Program -->
-		<tr>
-			<td class="frameborder">
-				<h3>Final Program</h3>
-				<p class="content1">8:15am &#8212 8:30am</p>
-				<p class="content2">Introduction and opening remarks</p>
-				<p class="content1">8:30am &#8212 9:20am</p>
-				<p class="content2">&#8212&#8212&#8212 Keynote talk 1 &#8212&#8212&#8212</p>
-<!--				<p class="content3">TBD</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#keynote1">High Performance Mapping for Deep Learning Algorithms
-Allen Rush (AMD)
-</button>
-				<!-- Modal -->
-				<div class="modal fade" id="keynote1" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Keynote</h4>
-						</div>
-						<div class="modal-body">
-						  <p>Abstract: TBD</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				
-				<p class="content3">Allen Rush (AMD)</p>
-				<p class="content1">9:20am &#8212 10:10am</p>
-				<p class="content2">&#8212&#8212&#8212 Keynote talk 2 &#8212&#8212&#8212</p>
-<!--				<p class="content3">Machine Learning on Social Network Platforms</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#keynote2">Machine Learning on Social Network Platforms</button>
-				<!-- Modal -->
-				<div class="modal fade" id="keynote2" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Keynote</h4>
-						</div>
-						<div class="modal-body">
-						  <p>Abstract:<br>
-							  Social networks have been deeply woven into our everyday life. These Internet platforms host a plethora of real-time services to keep people connected, provide customized information to users, and preserve information transparency. Underneath their infrastructure, the adoption of Machine Learning (ML) techniques is rapidly becoming omnipresent in both datacenters and end users’ devices, steering a rich feature set to enhance the effectiveness of users’ communication and to improve the quality of online experiences. Meanwhile, to achieve these objectives, ML can consume enormous computing resources and require meticulous resource design, provisioning, and management. In this talk, I will share our vision on the computation technologies and acceleration strategy at Facebook’s infrastructure, in particular, the state-of-the-art of our machine learning approaches on production-scale DNN-based personalized recommendation models for content ranking. Moreover, I will discuss the computing and privacy challenges lying ahead from the perspective of a social network service provider.</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Hsien-Hsin Lee (Facebook)</p>
-				<p class="content1">10:10am &#8212 10:30am</p>
-				<p class="content2">Coffee Break</p>
-				
-				<p class="content2">&#8212&#8212&#8212 Session 1: Hardware Acceleration of Machine Learning &#8212&#8212&#8212 </p>
-				<p class="content1">10:30am &#8212 10:50am</p>
-<!--				<p class="content3">Neural Networks Accelerator Design from the User Perspective</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk1">Neural Networks Accelerator Design from the User Perspective</button>
-				<!-- Modal -->
-				<div class="modal fade" id="invited_talk1" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Invited Talk</h4>
-						</div>
-						<div class="modal-body">
-						 	<p>Abstract:<br>
-							  To apply neural networks to different applications, various customized hardware architectures are proposed in the past a few years to boost the energy efficiency of deep learning inference processing. We will briefly review our past effort on Deep learning Processing Unit (DPU) design on FPGA in Tsinghua and Deephi, and then talk about some features, i.e. interrupt and virtualization, we are trying to introduce into the accelerators from the user’s perspective. 
-							</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Yu Wang (Tsinghua University)</p>
-				<p class="content1">10:50am &#8212 11:10am</p>
-<!--				<p class="content3">Algorithm/Hardware Co-design for Energy/Area efficient In-Memory Neural Network Computing</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk2">Algorithm/Hardware Co-design for Energy/Area efficient In-Memory Neural Network Computing</button>
-				<!-- Modal -->
-				<div class="modal fade" id="invited_talk2" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Invited Talk</h4>
-						</div>
-						<div class="modal-body">
-						 	<p>Abstract:<br>
-							  In-memory neural network accelerator has been gaining interests as an energy and area-efficient platform for neural network computing. Most previous in-memory neural network accelerators, however, could not fully exploit the benefits of in-memory computing due to the high overhead of peripheral circuits such as analog-to-digital converters (ADCs) and digital-to-analog converters (DACs). Such a problem becomes worse when large scale neural network is mapped to the multiple memory arrays. In this talk, I will discuss the algorithm/hardware co-design techniques such as input-splitting and input batch normalization which my group has been working on to solve the issues. I will also introduce our 6T SRAM cell-based SRAM Binary Neural Network chip. 
-							</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Jae-Joon Kim (POSTECH)</p>
-				<p class="content1">11:10am &#8212 11:30am</p>
-<!--				<p class="content3">Bringing Powerful Machine-learning Systems to Daily-life Devices via Algorithm-hardware Co-design</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk3">Bringing Powerful Machine-learning Systems to Daily-life Devices via Algorithm-hardware Co-design</button>
-				<!-- Modal -->
-				<div class="modal fade" id="invited_talk3" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Invited Talk</h4>
-						</div>
-						<div class="modal-body">
-						 	<p>Abstract:<br>
-							   TBD
-							</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Yingyan Lin (Rice University)</p>
-				<p class="content1">11:30am &#8212 11:50am</p>
-<!--				<p class="content3">Toward Next-Generation Acceleration for AI: A Heterogeneous Computing Approach</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk4">Toward Next-Generation Acceleration for AI: A Heterogeneous Computing Approach</button>
-				<!-- Modal -->
-				<div class="modal fade" id="invited_talk4" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Invited Talk</h4>
-						</div>
-						<div class="modal-body">
-						 	<p>Abstract:<br>
-								AI and Machine Learning (ML) increasingly require innovative computing solutions to meet their performance and power needs, thus challenging the architects to rethink system design beyond traditional discrete CPUs, GPUs, and FPGAs. Meanwhile, recent advances in integration technology such as Intel’s Embedded Multi-die Interconnect Bridge (EMIB) and Foveros (3D stacking) allow for designing next-generation AI computing platforms with heterogeneity in mind. In this talk, I will first summarize recent trends in ML and their implications for computing. I will then present some of our research efforts in accelerating ML with heterogeneous computing including TensorRAM—an ASIC chiplet to enhance FPGAs for real-time AI—, Intel Xeon+FPGA Acceleration Platform, and near-memory architectures. I will conclude by discussing the opportunities and challenges for future research in this area.
-							</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Jaewoong Sim (Intel)</p>
-				<p class="content1">11:50am &#8212 12:10pm</p>
-<!--				<p class="content1">Neural Networks Accelerator Design from the User Perspective</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk5">Bayesian Tensorized Neural Networks with Automatic Rank Determination</button>
-				<!-- Modal -->
-				<div class="modal fade" id="invited_talk5" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Invited Talk</h4>
-						</div>
-						<div class="modal-body">
-						 	<p>Abstract:<br>
-							  As a high-dimensional generalization of matrix factorization, tensor decomposition is an effective approach to compress over-parameterized neural networks and to enable their deployment on resource-constrained hardware platforms. However, directly applying tensor compression in the training process is a challenging task due to the NP-hardness of exactly determining a tensor rank.  In order to address this challenge, we propose a low-rank Bayesian tensorized neural network. Our Bayesian method performs automatic model compression via an adaptive tensor rank determination. We also present approaches for posterior density calculation and maximum a posteriori (MAP) estimation for the end-to-end training of our tensorized neural network. We provide experimental validation on a two-layer fully connected neural network, a 6-layer CNN and a 110-layer residual neural network where our work produces 7.4× to 137× more compact neural networks directly from the training while achieving high prediction accuracy. This framework may be further integrated with other hardware implementation tricks such as pruning and quantization.
-							</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Zheng Zhang (UCSB)</p>
-				<p class="content1">12:10pm &#8212 1:10pm</p>
-				<p class="content2">Lunch</p>
-				
-				<p class="content1">1:10pm &#8212 2:00pm</p>
-				<p class="content2">&#8212&#8212&#8212 Keynote talk 3 &#8212&#8212&#8212</p>
-<!--				<p class="content3">Machine Learning on Social Network Platforms</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#keynote3">On-Device AI for Augmented Reality (AR) Systems</button>
-				<!-- Modal -->
-				<div class="modal fade" id="keynote3" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Keynote</h4>
-						</div>
-						<div class="modal-body">
-						  <p>Abstract:<br>
-							  Augmented reality (AR) is a set of technologies that will fundamentally change the way we interact with our environment. It represents a merging of the physical and the digital worlds into a rich, context aware user interface delivered through a socially acceptable form factor such as eyeglasses. Majority of the critical algorithms in AR systems are now powered by AI, which provides much better user experience but requires considerably more compute and memory resources. In  this presentation, we will discuss the challenges and opportunities to enable AI-based algorithms in an energy-constrained AR system. Specifically, we emphasize the necessity to co-design and co-optimize the AI algorithms and the hardware platforms, where the algorithms will be executed. We will present our early work to demonstrate the benefits and potential of such a co-design approach and discuss open research areas that are promising for the research community to explore.</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Vikas Chandra (Facebook)</p>
-				
-				<p class="content2">&#8212&#8212&#8212 Session 2: Intelligent Mobile Applications &#8212&#8212&#8212 </p>
-				<p class="content1">2:00pm &#8212 2:20pm</p>
-<!--				<p class="content3">A Product Engine for Energy-Efficient Execution of Binary Neural Networks Using Resistive Memories</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk6">A Product Engine for Energy-Efficient Execution of Binary Neural Networks Using Resistive Memories</button>
-				<!-- Modal -->
-				<div class="modal fade" id="invited_talk6" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Invited Talk</h4>
-						</div>
-						<div class="modal-body">
-						 	<p>Abstract:<br>
-								The need for running complex Machine Learning (ML) algorithms, such as Convolutional Neural Networks (CNNs), in edge devices, which are highly constrained in terms of computing power and energy, makes it important to execute such applications efficiently. The situation has led to the popularization of Binary Neural Networks (BNNs), which significantly reduce execution time and memory requirements by representing the weights (and possibly the data being operated) using only one bit. In this talk, we present a custom Binary Dot Product Engine (BDPE) for BNNs that exploits the features of Resistive Random-Access Memories (RRAMs). The novel BDPE locally stores the most used binary weights and performs binary convolution using computing capabilities enabled by the RRAMs. Results show that this novel BDPE improves performance and energy efficiency of modern ARMv8 in-order cores for complex workloads such as YoloV3 XNOR-Net.
-							</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Pierre-Emmanuel Gaillardon (University of Utah)</p>
-				<p class="content1">2:20pm &#8212 2:40pm</p>
-<!--				<p class="content3">Evolutionary Optimization for Neuromorphic Systems</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk7">Evolutionary Optimization for Neuromorphic Systems</button>
-				<!-- Modal -->
-				<div class="modal fade" id="invited_talk7" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Invited Talk</h4>
-						</div>
-						<div class="modal-body">
-						 	<p>Abstract:<br>
-							   A key challenge in the field of neuromorphic computing is defining the appropriate training and learning algorithms. In this talk, an evolutionary optimization-based training approach for neuromorphic systems will be described.  This approach has been used to train spiking neural networks for different neuromorphic implementations and different applications.  It has also been combined with other neuromorphic training approaches, such as liquid state machines, in order to improve performance.
-							</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Catherine Schuman (Oak Ridge National Lab)</p>
-				<p class="content1">2:40pm &#8212 3:00pm</p>
-<!--				<p class="content3">Micro AI: When Intelligence Moves to the Low Power Sensors</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk8">Micro AI: When Intelligence Moves to the Low Power Sensors</button>
-				<!-- Modal -->
-				<div class="modal fade" id="invited_talk8" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Invited Talk</h4>
-						</div>
-						<div class="modal-body">
-						 	<p>Abstract:<br>
-							  Artificial intelligence is being used in a variety of edge-computing devices such as biomedical sensors, wearables and drones to enable knowledge extraction, data analytics and personalization. Processing these sensor-level machine learning tasks come at the cost of high computational complexity and memory storage which is overwhelming for these light weight and battery constrained devices. In this talk, I present some research solutions that enable performing data analytics in real time while consuming low power, and hence enabling a variety of always-on and battery constrained devices.  First, I present SensorNet a scalable framework across algorithms, architectures and hardware that can take any number of raw sensor data for variety of applications and classifies the events with a high accuracy and consumes very low power. Next I present efficient techniques to reduce the model size and computation of the overall network. These techniques include low bitwidth networks such as binarized neural networks, and compact networks such as cyclic sparsely connected, depthwise and separable layers. I will show the efficiency of our solutions for multichannel Electroencephalogram (EEG) artifact detection and stress monitoring as well as autonomous devices. 
-							</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Tinoosh Mohsenin (UMBC)</p>
-				<p class="content1">3:00pm &#8212 3:20pm</p>
-<!--				<p class="content3">Beyond Energy-Efficiency: Enabling fault-aware Learning On-a-chip</p>-->
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk9">Beyond Energy-Efficiency: Enabling fault-aware Learning On-a-chip</button>
-				<!-- Modal -->
-				<div class="modal fade" id="invited_talk9" role="dialog">
-					<div class="modal-dialog">
-					  <!-- Modal content-->
-					  <div class="modal-content">
-						<div class="modal-header">
-						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h4 class="modal-title">Invited Talk</h4>
-						</div>
-						<div class="modal-body">
-						 	<p>Abstract:<br>
-							  Despite its promise in a wide variety of domains, deep learning brings challenges in terms of the underlying hardware power, throughput, and latency, etc. Despite significant efforts from industry and academia in deploying specialized chips for accelerating deep learning, fundamental challenges remain. A significant challenge is reliability:  given the increasingly unpredictable nature of nanoscale semiconductor devices, how can we ensure fault-free execution of deep learning on specialized hardware. In this talk, we analyze the impact of both transient faults (e.g., timing errors) and permanent errors (e.g., stuck-at-faults) during deep learning acceleration. To mitigate these impact, we propose several mechanisms from innovative fault-aware hardware design to robust model re-training. We also discuss an ML based framework to speed up the reliable machine learning on-a-chip.  
-							</p>
-						</div>
-						<div class="modal-footer">
-						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<p class="content3">Siddharth Garg (New York University)</p>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-				<p class="content1">3:20pm &#8212 3:40pm</p>
-				<p class="content2">Coffee Break</p>
-				
-				<p class="content2">&#8212&#8212&#8212 Poster Session &#8212&#8212&#8212 </p>
-				<p class="content1">3:40pm &#8212 4:10pm</p>
-				<p class="content3">P1. How to Obtain and Run Light and Efficient Deep Learning Networks</p>
-				<p class="content4">Fan Chen (Duke University)</p>
-				<p class="content3">P2. Achieving Super-Linear Speedup across Multi-FPGA for Real-Time DNN Inference</p>
-				<p class="content4">Weiwen Jiang (University of Notre Dame)</p>
-				<p class="content3">P3. On Neural Architecture Search for Resource-Constrained Hardware Platforms</p>
-				<p class="content4">Qing Lu (University of Notre Dame)</p>
-				<p class="content3">P4. CIMAT: A Transpose SRAM-based Compute-In-Memory Architecture for Deep Neural Network On-Chip Training</p>
-				<p class="content4">Hongwu Jiang (Georgia Institute of Technology)</p>
-				<p class="content3">P5.	HR3AM: A Heat Resilient design for RRAM based neuromorphic computing</p>
-				<p class="content4">Xiao Liu (University of California San Diego) </p>
-				<p class="content3">P6. ACG-Engine: An Inference Accelerator for Content Generative Neural Networks</p>
-				<p class="content4">Haobo Xu (Institute of Computing Technology, Chinese Academy of Sciences)</p>
-				<p class="content3">P7. Mixed Precision Neural Architecture Search for Energy Efficient Deep Learning</p>
-				<p class="content4">Zhixuan Jiang (The University of Texas at Austin)</p>
-				<p class="content3">P8.	Enhanced Error-Correcting DNN Classifier Towards Robust Machine Learning On-a-chip</p>
-				<p class="content4">Tao Liu (Lehigh University)</p>
-				<p class="content3">P9.	PCONV: A Desirable Sparsity Dimension for Real-time Execution -- From Algorithm to Framework</p>
-				<p class="content4">Xiaolong Ma (Northeastern University)</p>
-				<p class="content3">P10. 2.5ms MobileNet-V2 Execution on Mobile Phone -- A Compiler-Assisted Block Pruning Framework </p>
-				<p class="content4">Zhengang Li (Northeastern University)</p>
-				<p class="content3">P11. INA: Incremental Network Approximation Algorithm for Limited Precision Deep Neural Networks</p>
-				<p class="content4">Zheyu Liu (Tsinghua University)</p>
-				<p class="content3">P12. Approximating Backpropagation for a Biologically Plausible Local Learning Rule in Spiking Neural Networks</p>
-				<p class="content4">Haowen Fang (Syracuse University) </p>
-				<p class="content3">P13. Leveraging Model Diversity for High QoS Deep Learning Inference in the Clouds</p>
-				<p class="content4">Jeff (Jun) Zhang (New York University)</p>
-				
-				<p class="content1">4:10pm &#8212 5:00pm</p>
-				<p class="content2">Poster Discussion</p>
-				
-				
-			</td>
-		</tr>
-		<!-- Committee -->
-		<tr>
-			<td class="frameborder">
-				<h3>Organizing Committee</h3>
-				
-				<h4>Co-chairs</h4>
-				<ul style="list-style-type:none;">
-				 	<li>Yiran Chen, Duke University</li>
-				 	<li>Qinru Qiu, Syracuse University</li>
-				 	<li>Yanzhi Wang, Northeastern University</li>
-					<li>Jishen Zhao, University of California, San Diego</li>
-				</ul>
-				<h4>Steering Committee</h4>
-				<ul style="list-style-type:none;">
-				 	<li>Jae-sun Seo, Arizona State University</li>
-					<li>Yu Cao, Arizona State University</li>
-					<li>Xin Li, Duke University</li>
-				</ul> 
-				<h4>Technical Program Committee</h4>
-				<ul style="list-style-type:none;">
-				 	<li>Rob Aitken, ARM</li>
-				 	<li>Shawn Blanton, Carnegie Mellon University</li>
-				 	<li>Sankar Basu, National Science Foundation</li>
-					<li>Maxim Bazhenov, University of California, San Diego</li>
-<!--					<li>Yu Cao, Arizona State University</li>-->
-					<li>Kailash Gopalakrishnan, IBM</li>
-					<li>Kendel McCarley, Raytheon</li>
-					<li>Mustafa Ozdal, Bilkent University, Turkey</li>
-					<li>Yuan Xie, University of California, Santa Barbara</li>
-					<li>Chris Yu, Charles Stark Draper Laboratory</li>
-<!--					<li>To Be Determined</li>-->
-				</ul> 
-				<h4>Web Chair</h4>
-				<ul style="list-style-type:none;">
-				 	<li>Bonan Yan, Duke University</li>
-				</ul> 
-			</td>
-		</tr>
-		<!-- Sponsors -->
-		<tr>
-			<td class="frameborder">
-				<h3>Sponsored by</h3>
-				<img src="assets/logo-sigda.jpg" alt="Sigda" height="100px">
-			</td>
-		</tr>
-		<!-- copyright -->
-		<tr>
-			<td><p class="copyright1"> Last updated on Oct. 22, 2019. Contents subject to change. &copy; All rights reserved.</p></td>
-		</tr>
-		
-	</table>
-	
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-offset="64" data-target="#section-topbar">
+
+  <div id="section-topbar">
+    <div id="topbar-inner">
+      <div class="container">
+        <div class="row">
+          <div class="dropdown">
+            <ul id="nav" class="nav">
+              <li class="menu-item"><a class="smothscroll" href="#about" title="About"><i class="fa fa-user"></i></a></li>
+              <li class="menu-item"><a class="smothscroll" href="#resume" title="Resume"><i class="fa fa-file-text-o"></i></a></li>
+              <li class="menu-item"><a class="smothscroll" href="#work" title="Works"><i class="fa fa-briefcase"></i></a></li>
+              <li class="menu-item"><a class="smothscroll" href="#contact" title="Contact"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+            <!--/ uL#nav -->
+          </div>
+          <!-- /.dropdown -->
+
+          <div class="clear"></div>
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
+
+      <div class="clear"></div>
+    </div>
+    <!--/ #topbar-inner -->
+  </div>
+  <!--/ #section-topbar -->
+
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-12">
+          <h1>William T. Kelvin</h1>
+          <h3>Web Designer | contact@example.com</h3>
+        </div>
+        <!--/.col-lg-12 -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/.#headerwrap -->
+
+
+  <section id="about" name="about">
+    <div id="intro">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-2 col-lg-offset-1">
+            <h5>ABOUT</h5>
+          </div>
+          <div class="col-lg-6">
+            <p>I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like
+              branding, icon design or web development.</p>
+          </div>
+          <div class="col-lg-3">
+            <p><a href="#"><i class="icon-file"></i></a>
+              <sm>DOWNLOAD PDF</sm>
+            </p>
+          </div>
+
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
+    </div>
+    <!--/ #intro -->
+  </section>
+
+
+  <section id="resume" name="resume">
+    <!--EDUCATION DESCRIPTION -->
+    <div class="container desc">
+      <div class="row">
+
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>EDUCATION</h5>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            <t>Master of Web Design</t><br/> St. Patrick University <br/>
+            <i>3 Years Course</i>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p>
+            <sm>GRADUATING IN MAY 2014</sm><br/>
+            <imp>
+              <sm>IN PROGRESS</sm>
+            </imp>
+          </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+          <p>
+            <t>Degree of Web Developer</t><br/> Hastings University <br/>
+            <i>2 Years Course</i>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p>
+            <sm>JUNE 2012</sm>
+          </p>
+        </div>
+
+      </div>
+      <!--/.row -->
+      <br>
+      <hr>
+    </div>
+    <!--/.container -->
+  </section>
+
+  <!--WORK DESCRIPTION -->
+  <div class="container desc">
+    <div class="row">
+
+      <div class="col-lg-2 col-lg-offset-1">
+        <h5>WORK</h5>
+      </div>
+      <div class="col-lg-6">
+        <p>
+          <t>Front-end Developer</t><br/> Example Corp. <br/>
+        </p>
+        <p>
+          <more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more>
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p>
+          <sm>AUGUST 2012 - CURRENT</sm>
+        </p>
+      </div>
+
+      <div class="col-lg-6 col-lg-offset-3">
+        <p>
+          <t>Web Designer - Intern</t><br/> Onassis Ltd. <br/>
+        </p>
+        <p>
+          <more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more>
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p>
+          <sm>JUNE 2010 - JULY 2012</sm>
+        </p>
+      </div>
+    </div>
+    <!--/.row -->
+    <br>
+    <hr>
+  </div>
+  <!--/.container -->
+
+
+  <!--AWARDS DESCRIPTION -->
+  <div class="container desc">
+    <div class="row">
+      <div class="col-lg-2 col-lg-offset-1">
+        <h5>AWARDS</h5>
+      </div>
+      <div class="col-lg-6">
+        <p>
+          <t>Best Web Design</t><br/> Example Site <br/>
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p>
+          <sm>NOVEMBER 2013</sm>
+        </p>
+      </div>
+
+      <div class="col-lg-6 col-lg-offset-3">
+        <p>
+          <t>Designer of the Year</t><br/> Awwwards Site
+        </p>
+        <p>
+          <more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more>
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p>
+          <sm>2013</sm>
+        </p>
+      </div>
+
+    </div>
+    <!--/.row -->
+    <br>
+  </div>
+  <!--/.container -->
+
+
+  <!--SKILLS DESCRIPTION -->
+  <div id="skillswrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>SKILLS</h5>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="javascript" height="130" width="130"></canvas>
+          <p>Javascript</p>
+          <br>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="bootstrap" height="130" width="130"></canvas>
+          <p>Bootstrap</p>
+          <br>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="wordpress" height="130" width="130"></canvas>
+          <p>Wordpress</p>
+          <br>
+        </div>
+
+        <div class="col-lg-3 col-lg-offset-3 centered">
+          <canvas id="html" height="130" width="130"></canvas>
+          <p>HTML/CSS</p>
+          <br>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="photoshop" height="130" width="130"></canvas>
+          <p>Photoshop</p>
+          <br>
+        </div>
+        <div class="col-lg-3 centered">
+          <canvas id="illustrator" height="130" width="130"></canvas>
+          <p>Illustrator</p>
+          <br>
+        </div>
+
+      </div>
+      <!--/.row -->
+      <br>
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/ #skillswrap -->
+
+
+
+  <section id="work" name="work">
+    <!--PORTFOLIO DESCRIPTION -->
+    <div class="container desc">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>PORTFOLIO</h5>
+        </div>
+        <div class="col-lg-6">
+          <p><img class="img-responsive" src="img/port01.jpg" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+          <p>CANALS OF ENGLAND</p>
+          <p>
+            <more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
+              <sm><i class="icon-tag"></i> design</sm>
+            </more>
+          </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><img class="img-responsive" src="img/port02.jpg" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+          <p>SANKEY</p>
+          <p>
+            <more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
+              <sm><i class="icon-tag"></i> front-end</sm>
+            </more>
+          </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><img class="img-responsive" src="img/port03.jpg" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+          <p>WE GROW</p>
+          <p>
+            <more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
+              <sm><i class="icon-tag"></i> web design</sm>
+            </more>
+          </p>
+        </div>
+
+      </div>
+      <!--/.row -->
+      <br>
+      <br>
+    </div>
+    <!--/.container -->
+  </section>
+
+  <section id="contact" name="contact">
+    <!--FOOTER DESCRIPTION -->
+    <div id="footwrap">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-2">
+            <h5>CONTACT</h5>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              <t>Email</t><br/> contact@example.com <br/>
+            </p>
+            <p>
+              <t>Adress</t><br/> Some Ave. 987 <br/> Postal 23892 <br/> London, England. <br/>
+            </p>
+            <p>
+              <t>Phone</t><br/> +55 8933-2383 <br/>
+            </p>
+            <p>
+              <t>Social Links</t><br/>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-apple"></i></a>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              <sm>CONTACT FORM</sm>
+            </p>
+            <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                <div class="validate"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+
+              <div class="loading"></div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <div class="form-send">
+                <button type="submit" class="btn btn-large">Send Message</button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container -->
+    </div>
+    <!--/ #footer -->
+  </section>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+      <div class="credits">
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/chart/chart.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>
