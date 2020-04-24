@@ -1,6 +1,3 @@
-# halo2019
-HALO Workshop Website 2019
+# Design Automation WebiNar
 
-To view the website: 
-
-please visit [https://bonanyan.github.io/halo2019/](https://bonanyan.github.io/halo2019/)
+Please visit [here](https://jiachenmao.github.io/DAWN/) to view the website: 
