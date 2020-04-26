@@ -180,7 +180,12 @@ By default, top navigation bar uses "fixed" position
 SECTION WRAPS
 ---------------------------------------------------*/
 #event_top {
-  padding-top: 40px;
+  padding-top: 60px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  background: #2c3e50;
 }
 
 #subtitle {
