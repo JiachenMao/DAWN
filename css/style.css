@@ -200,7 +200,7 @@ By default, top navigation bar uses "fixed" position
 
 .arrow{
         border: 9px solid transparent;
-        border-bottom-color: #3DA0DB;
+        border-bottom-color: #949191;
         width: 0px;
         height: 0px;
         top:0px
@@ -210,7 +210,8 @@ By default, top navigation bar uses "fixed" position
     width: 8px;
     height: 14px;
     border-radius: 1px;
-    background-color: #3DA0DB;
+    background-color: #949191;
+    opacity:0.9;
     top:15px;
 }
 #gotop div{
@@ -220,16 +221,17 @@ By default, top navigation bar uses "fixed" position
     left: 0px;
 }
 #gotop{
-    background-color: #dddddd;
+    background-color: #ebe8e8;
     height: 38px;
     width: 38px;
     border-radius: 3px;
     display: block;
     cursor: pointer;
     position: fixed;
-    right: 50px;
-    bottom: 100px;
+    right: 10px;
+    bottom: 10px;
     display: none;
+    opacity:0.5;
 }
 
 /*---------------------------------------------------
