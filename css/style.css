@@ -8,27 +8,24 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-@keyframes myfirst
-  {
-    0%   {height: 0%}
-    100% {height: 100%}
-  }
-/*   @keyframes mySec
-  {
-    0%   {height: 150px}
-    100% {height: 0}
-  }*/
-  .collapse-content-box {
-    overflow: hidden;
-    /*width: 150px;*/
-    height: 0;
-    animation: myfirst 1s alternate;
-    animation-fill-mode : forwards;
-    animation-direction: alternate;
-  }
-  .act + .collapse-content-box{
-    animation: myfirst 1s alternate;
-  }
+
+.drop {
+  cursor: pointer;
+  display: block;
+  background: #090;
+}
+
+.drop + input{
+ display: none; /* hide the checkboxes */
+}
+
+.drop + input + div{
+  display:none;
+}
+
+.drop + input:checked + div{
+  display:block;
+}
 
 /* Titles */
 .dropbtn {
