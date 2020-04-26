@@ -231,10 +231,19 @@ By default, top navigation bar uses "fixed" position
     bottom: 100px;
     display: none;
 }
-    
+
 /*---------------------------------------------------
 SECTION WRAPS
 ---------------------------------------------------*/
+#introduction {
+  color: black;
+  /*text-align: center;*/
+}
+
+#introduction:hover {
+  color: #808080;
+}
+
 #event_top {
   padding-top: 60px;
   font-size: 35px;
@@ -245,7 +254,7 @@ SECTION WRAPS
 }
 
 #event_top:hover {
-  background-color: #00ced1;
+  background-color: #4682B4;
 }
 
 #subtitle {
@@ -256,7 +265,7 @@ SECTION WRAPS
   background: #2c3e50;
 }
 #subtitle:hover {
-  background-color: #00ced1;
+  background-color: #4682B4;
 }
 
 /* Header Wrap */
@@ -292,16 +301,18 @@ SECTION WRAPS
 
 /* Intnro Wrap */
 
+
 #intro {
   background: white;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: black;
 }
 
 #intro h5, p {
   color: black;
 }
+
 
 #intro i {
   color: white;
