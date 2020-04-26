@@ -15,6 +15,7 @@ body {
   background: #090;
 }
 
+
 .drop + input{
  display: none; /* hide the checkboxes */
 }
@@ -207,6 +208,10 @@ SECTION WRAPS
   background: #2c3e50;
 }
 
+#event_top:hover {
+  background-color: #00ced1;
+}
+
 #subtitle {
   font-size: 35px;
   text-align: center;
@@ -214,7 +219,9 @@ SECTION WRAPS
   font-weight: 900;
   background: #2c3e50;
 }
-
+#subtitle:hover {
+  background-color: #00ced1;
+}
 
 /* Header Wrap */
 
