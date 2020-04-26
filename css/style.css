@@ -10,8 +10,8 @@ body {
 
 @keyframes myfirst
   {
-    0%   {height: 0px}
-    100% {height: 250px}
+    0%   {height: 0%}
+    100% {height: 100%}
   }
 /*   @keyframes mySec
   {
