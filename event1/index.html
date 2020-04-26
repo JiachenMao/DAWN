@@ -75,24 +75,25 @@
     EVENTS
   </div>
 
+    <div class="collapse-content-box"> 
+      <div class="container desc">
+          <div class="col-lg-2">
+            <h5>Event #</h5>
+          </div>
 
-    <div class="container desc">
-        <div class="col-lg-2">
-          <h5>Event #</h5>
-        </div>
-
-        <div class="col-lg-6">
-          <p>
-            <t>Machine Learning</t><br/> Zoom Info: <br/>
-          </p>
-          <p>
-          <more>Abstract .</more>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p>
-          	<sm>----</sm>
-          </p>
+          <div class="col-lg-6">
+            <p>
+              <t>Machine Learning</t><br/> Zoom Info: <br/>
+            </p>
+            <p>
+            <more>Abstract .</more>
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <p>
+            	<sm>----</sm>
+            </p>
+          </div>
         </div>
       </div>
       <br>
@@ -103,8 +104,35 @@
   </section>
 
 
+
+
+
 <!-- #####################################################    Speaker         ########################################################### -->
-  <section id="speaker" name="speaker">
+  <div>
+    <div id="subtitle">
+    SPEAKERS
+  </div> 
+    <div class="collapse-content-box"> 
+      <div class="container desc">
+        <div class="row">
+           <div class="col-lg-8">
+              <p>
+                <t>Yiran Chen</t>
+                <h5>Duke University</h5>
+                <h5>Abstract</h5>
+              </p>
+            </div>
+            <div class="col-lg-2">
+              <img class="img-responsive" src="../img/yiran.jpg" alt="">
+            </div>
+        </div>
+        <br>
+        <hr>
+      </div>
+    </div>
+ </div>  
+<!-- #####################################################    Speaker         ########################################################### -->
+ <!--  <section id="speaker" name="speaker">
  	
  	<div id="subtitle">
  		SPEAKERS
@@ -127,7 +155,7 @@
       <br>
       <hr>
     </div>
-
+ -->
 
 
   </section>
@@ -138,6 +166,38 @@
   
 
   <!-- JavaScript Libraries -->
+    <script type="text/javascript">
+      var btn = document.getElementById('subtitle');
+      (function(){
+        var mark = true;
+        btn.onclick = function(){
+          if(mark){
+            this.classList.add("act");
+            mark = false;
+          }else{
+            this.classList.remove("act");
+            mark = true;
+          }
+        }
+      })()
+    </script>
+  <script type="text/javascript">
+      var btn = document.getElementById('event_top');
+      (function(){
+        var mark = true;
+        btn.onclick = function(){
+          if(mark){
+            this.classList.add("act");
+            mark = false;
+          }else{
+            this.classList.remove("act");
+            mark = true;
+          }
+        }
+      })()
+    </script>
+
+
   <script src="../lib/jquery/jquery.min.js"></script>
   <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="../lib/php-mail-form/validate.js"></script>
