@@ -101,7 +101,7 @@ hr {
 ---------------------------------------------------*/
 
 #section-topbar {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -179,6 +179,9 @@ By default, top navigation bar uses "fixed" position
 /*---------------------------------------------------
 SECTION WRAPS
 ---------------------------------------------------*/
+#event_top {
+  padding-top: 40px;
+}
 
 #subtitle {
   font-size: 35px;
@@ -194,7 +197,7 @@ SECTION WRAPS
 #headerwrap {
   background: url(../img/header-bg.jpg) no-repeat center top;
   /*margin-top: 30px;*/
-  padding-top: 40px;
+  padding-top: 80px;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
