@@ -69,6 +69,33 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
+h7 {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 100;
+  color: white
+}
+
+h8 {
+  font-style:italic;
+  font-size: 20px;
+  font-weight: 400;
+  color: white
+}
+
+h9 {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+
+h10 {
+  font-style:italic;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+
 #h7{
   text-align: right;
 }
@@ -240,6 +267,11 @@ By default, top navigation bar uses "fixed" position
 /*---------------------------------------------------
 SECTION WRAPS
 ---------------------------------------------------*/
+#agenda{}
+#agenda:hover {
+  color: #4682B4;
+}
+
 #introduction {
   color: black;
   /*text-align: center;*/
@@ -250,19 +282,22 @@ SECTION WRAPS
 }
 
 #event_top {
-  padding-top: 60px;
+  padding-top: 75px;
+  padding-bottom: 15px;
   font-size: 35px;
+  line-height: 35px;
   text-align: center;
   color: white;
   font-weight: 900;
   background: #2c3e50;
 }
 
-#event_top:hover {
+/*#event_top:hover {
   background-color: #4682B4;
-}
+}*/
 
 #subtitle {
+  /*padding-top: 75px;*/
   font-size: 35px;
   text-align: center;
   color: white;
@@ -278,11 +313,11 @@ SECTION WRAPS
 #headerwrap {
   background: url(../img/header-bg.jpg) no-repeat center top;
   /*margin-top: 30px;*/
-  padding-top: 80px;
+  padding-top: 100px;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 300px;
+  min-height: 280px;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -295,7 +330,7 @@ SECTION WRAPS
 }
 
 #headerwrap h1 {
-  font-size: 50px;
+  font-size: 60px;
   color: white;
 }
 
