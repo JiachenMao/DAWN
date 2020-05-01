@@ -298,6 +298,7 @@ SECTION WRAPS
 
 #subtitle {
   /*padding-top: 75px;*/
+  margin-top: 15px;
   font-size: 35px;
   text-align: center;
   color: white;
